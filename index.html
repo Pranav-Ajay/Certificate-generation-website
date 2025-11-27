@@ -1,8 +1,9 @@
 <html>
 <body id="bello"></body>
 <script>
-const a="00"
- let b=30
+ let element=document.getElementById("bello").innerHtml;
+ const a="00";
+ let b=30;
  function countdown(){
    b--;
    if(b<0){
@@ -18,6 +19,6 @@ const a="00"
    }
   const element = setInterval(countdown, 1000);
   console.log(element);
- </script>
+</script>
 </html>
 
