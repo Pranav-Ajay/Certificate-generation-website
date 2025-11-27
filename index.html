@@ -6,17 +6,17 @@
  const a="00";
  let b=30;
  function countdown(){
-   b--;
    if(b<0){
     clearInterval(Count);
      return;
     }
     if(b>=10){
-     element.innerHTML=a,":",b;
+     element.innerHTML=a+":"+b;
     }
     else if(b<10){
-     element.innerHTML=a,":","0"+b; 
+     element.innerHTML=a+":"+"0"+b; 
     }
+    b--;
    }
   const Count = setInterval(countdown, 1000);
 </script>
